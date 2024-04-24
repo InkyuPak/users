@@ -5,8 +5,6 @@ import com.example.usersservice.dto.UserListDto;
 import com.example.usersservice.dto.UserUpdateDto;
 import org.springframework.data.domain.Page;
 
-import java.util.List;
-
 public interface UserService {
 
     UserCreateDto userCreate(UserCreateDto userCreateDto);

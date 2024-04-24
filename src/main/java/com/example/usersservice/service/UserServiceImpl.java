@@ -43,6 +43,7 @@ public class UserServiceImpl implements UserService{
                 .build();
 
         UserEntity saveUser = userRepository.save(userEntity);
+        log.info("회원 가입 완료 :: 회원 정보 = {} ", saveUser);
 
         return mapper.map(saveUser, UserCreateDto.class);
     }
@@ -95,6 +96,7 @@ public class UserServiceImpl implements UserService{
             );
 
             UserEntity updateUser = userRepository.save(user);
+            log.info("회원 정보 수정 완료 :: 회원 정보 = {} ", updateUser);
 
             return mapper.map(updateUser, UserUpdateDto.class);
         } catch (Exception e) {
