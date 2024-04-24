@@ -12,7 +12,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class UserUpdateDto implements Serializable {
 
-    private String userId;
     private String password;
     private String nickname;
     private String name;
